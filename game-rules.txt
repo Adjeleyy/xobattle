@@ -1,0 +1,36 @@
+Rules of the game
+1. The game is played in a 3x3 grid
+2. Players take turns putting their marks in empty squares.
+3. The first player to get 3 of their marks in a row (vertically, horizontally or diagonally) is the winner.
+4. When all 9 squares are full, the game is over.
+5. If no player has 3 marks in a row, the game ends in a tie.
+
+#TODO Create a 3x3 grid.
+
+#TODO Assign a mark to each player (X and O).
+
+#TODO Listen for a click event in all 9 squares; When clicked, the player's mark should be registered in the box.
+
+#TODO The computer plays after the user's turn each time.
+
+#TODO Create a scoreboard to keep count of the scores each time the game ends.
+
+#TODO Create a message display at the end of each game Draw, Player A wins, or Player B wins.
+
+
+GAME LOGIC
+#TODO Get X and O symbols to use for the game.
+
+#TODO Create a 3 x 3 matrix.
+
+#TODO Attach event listeners to all 9 boxes to listen for a click only when its the player's turn.
+
+#TODO Create a for/while loop to detect when game is over
+  - game is over when when a player gets 3 of their marks in a row
+  - or when there's a tie.
+  At each game over, a user's score should be up by 1 if they win. Else, no scores for anyone.
+
+#TODO Make computer logic in such a way that it prevents the player from winning as much as possible.
+
+
+

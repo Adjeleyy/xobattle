@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #E4E0E1;
+}
+
+.container {
+    text-align: center;
+    background-color: #D6C0B3;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(73, 54, 40, 0.2);
+}
+
+h1 {
+    color: #493628;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+#player-selection {
+    margin-bottom: 2rem;
+}
+
+.symbol-button {
+    width: 120px;
+    height: 120px;
+    font-size: 4rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    background-color: #AB886D;
+    border: 3px solid #493628;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    color: #493628;
+}
+
+.symbol-button:hover {
+    transform: scale(1.1);
+    background-color: #493628;
+    color: #E4E0E1;
+}
+
+#game-container {
+    display: none;
+}
+
+#game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 2rem auto;
+    max-width: 450px;
+    background-color: #493628;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cell {
+    width: 140px;
+    height: 140px;
+    background-color: #D6C0B3;
+    border: none;
+    border-radius: 8px;
+    font-size: 5rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #493628;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #AB886D;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #493628;
+    align-items: center;
+}
+
+.score {
+    padding: 0.5rem 1rem;
+    background-color: #D6C0B3;
+    border-radius: 8px;
+    min-width: 100px;
+    font-weight: bold;
+}
+
+#message {
+    margin: 0;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #493628;
+    background-color: #D6C0B3;
+    border-radius: 8px;
+    display: none;
+    font-weight: bold;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(73, 54, 40, 0.2);
+    text-align: center;
+    min-width: 200px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.turn-message {
+    font-size: 1.5rem;
+    color: #493628;
+    background-color: #D6C0B3;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+#reset-button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #AB886D;
+    color: #493628;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#reset-button:hover {
+    background-color: #493628;
+    color: #E4E0E1;
+    transform: scale(1.05);
+} 
